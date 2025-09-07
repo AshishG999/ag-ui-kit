@@ -1,0 +1,52 @@
+{
+  "name": "ag-ui-kit",
+  "version": "1.0.1",
+  "description": "Custom select box component (single + multiple) - no dependencies",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.tsx --format cjs,esm --dts --sourcemap --minify",
+    "clean": "rimraf dist",
+    "test:local": "echo 'Use npm pack / npm link to test locally'",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AshishG999/custom-component.git"
+  },
+  "keywords": [
+    "custom-select",
+    "select",
+    "component",
+    "vanilla-js",
+    "typescript"
+  ],
+  "author": "Ashish Gholap",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AshishG999/custom-component/issues"
+  },
+  "homepage": "https://github.com/AshishG999/custom-component#readme",
+  "devDependencies": {
+    "@types/node": "^24.3.1",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "rimraf": "^5.0.10",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
+  }
+}
